@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang bài tập – [Họ Tên]</title>
+  <style>
+    :root{
+      --bg:#0f172a;      /* xanh đen */
+      --card:#111827;
+      --muted:#cbd5e1;
+      --accent:#38bdf8;
+      --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui, Arial, sans-serif;
+      background:linear-gradient(180deg,#0b1022, #0f172a);
+      color:#e5e7eb;
+    }
+    .wrap{max-width:980px; margin:32px auto; padding:0 16px;}
+    header{
+      display:flex; align-items:center; gap:18px;
+      background:rgba(17,24,39,.65); border:1px solid var(--border);
+      padding:18px; border-radius:14px; backdrop-filter: blur(6px);
+    }
+    img.avatar{
+      width:92px; height:92px; border-radius:14px; object-fit:cover;
+      border:2px solid var(--accent);
+    }
+    h1{margin:0 0 4px; font-size:28px}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block; padding:4px 10px; border-radius:999px; background:#0b2533; color:#9ae6ff; border:1px solid #123b4f; font-size:12px}
+
+    .grid{
+      margin-top:22px;
+      display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:14px;
+    }
+    .card{
+      background:rgba(17,24,39,.75); border:1px solid var(--border);
+      padding:14px; border-radius:12px;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .card:hover{ transform: translateY(-2px); border-color:#334155 }
+    .card h3{margin:0 0 8px; font-size:16px}
+    a.btn{
+      display:inline-block; padding:8px 10px; border-radius:10px;
+      background:#0b2533; border:1px solid #153a4e; color:#c8f1ff; text-decoration:none;
+    }
+    a.btn:hover{ background:#0e2f42 }
+    .social{display:flex; gap:10px; margin-top:10px; flex-wrap:wrap}
+    .social a{
+      padding:8px 10px; border-radius:10px; background:#111827; border:1px solid #1f2937; color:#cbd5e1; text-decoration:none
+    }
+    .social a:hover{border-color:#334155}
+    footer{margin-top:26px; text-align:center; color:#93a3b8}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- THÔNG TIN CÁ NHÂN -->
+    <header>
+      <!-- Đổi src ảnh của bạn -->
+      <img class="avatar" src="/Users/mypham/Downloads/Nền.jpg" alt="Ảnh [Phạm Hoàng Mỹ]">
+      <div>
+        <h1>[Phạm Hoàng Mỹ]</h1>
+        <div class="muted">Lớp/Ngành: … • UEH</div>
+        <div class="badge">HTML • CSS • Web căn bản</div>
+        <div class="social">
+          <a href="https://www.facebook.com/hoang.my.pham.2024/" target="_blank" rel="noopener">Facebook</a>
+<a href="mypham.35231022337@st.ueh.edu.vn">Email</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- DANH SÁCH BÀI TẬP -->
+    <section class="grid" aria-label="Danh sách bài tập">
+      <!-- Cập nhật href đúng tên file của bạn -->
+      <article class="card">
+        <h3>Bài tập HTML - Ví dụ 1</h3>
+        <a class="btn" href="vidu1.html">Ví dụ 1</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập HTML - Ví dụ 2</h3>
+        <a class="btn" href="vidu2.html">Ví dụ 2</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập HTML - Ví dụ 3</h3>
+        <a class="btn" href="vidu3.html">Ví dụ 3</a>
+      </article>
+    </section>
+
+    <footer>© [Năm hiện tại] – [Họ Tên]. All rights reserved.</footer>
+  </div>
+</body>
+</html>
